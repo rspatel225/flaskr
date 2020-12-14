@@ -13,8 +13,8 @@ def app():
     db_fb, db_path = tempfile.mkstemp()
 
     app = create_app({
-        'TESTING' = True,
-        'DATABASE' = db_path,
+        'TESTING': True,
+        'DATABASE': db_path,
     })
 
     with app.app_context():
